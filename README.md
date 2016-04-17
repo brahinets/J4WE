@@ -1,5 +1,12 @@
 # Java 4 Web Experiments (J4WE)
 ===============================
 
-Gradle build command:
+Build project:
+```
 > gradle build
+```
+
+Run tests:
+```
+> gradle test
+```
