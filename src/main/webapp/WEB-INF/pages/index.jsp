@@ -6,7 +6,7 @@
     <link href="/res/css/j4we.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-Hello from Spring. Now is ${date}
+Hello from Spring. Now is ${date}. ${text}
 
 <script src="/res/js/j4we.js"></script>
 </body>
