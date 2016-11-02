@@ -1,0 +1,1 @@
+document.write("<br>Text written by JS resource");

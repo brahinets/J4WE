@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.Date;
 
 @Controller
-@RequestMapping("/**")
+@RequestMapping("/*")
 public class HelloController {
 
     @RequestMapping(method = RequestMethod.GET)
