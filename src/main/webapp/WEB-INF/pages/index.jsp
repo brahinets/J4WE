@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="/res/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     <link href="/res/css/j4we.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
