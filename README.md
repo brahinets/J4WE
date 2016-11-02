@@ -10,3 +10,8 @@ Run tests:
 ```
 > gradle test
 ```
+
+Deploy exploded:
+```
+> gradle appRun
+```
