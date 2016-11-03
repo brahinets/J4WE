@@ -13,8 +13,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
     providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
     compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.3.RELEASE'
-    compile group: 'org.springframework', name: 'spring-core', version: '4.3.3.RELEASE'
+    compile group: 'org.springframework', name: 'spring-orm', version: '4.3.3.RELEASE'
     testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.3.RELEASE'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.3.Final'
+    compile group: 'com.hynnet', name: 'oracle-driver-ojdbc6', version: '12.1.0.1'
+
 }
 
 //Gretty Embedded Jetty
