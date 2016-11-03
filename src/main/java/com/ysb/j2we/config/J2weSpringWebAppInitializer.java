@@ -8,12 +8,12 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
-public class J2weWebAppInitializer implements WebApplicationInitializer {
+public class J2weSpringWebAppInitializer implements WebApplicationInitializer {
     
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         AnnotationConfigWebApplicationContext c = new AnnotationConfigWebApplicationContext();
-        c.register(J2weWebAppConfig.class);
+        c.register(J2weApplicationContextConfig.class);
         c.setServletContext(servletContext);
 
         ServletRegistration.Dynamic r = servletContext.addServlet("dispatcher", new DispatcherServlet(c));

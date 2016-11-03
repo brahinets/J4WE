@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.ysb.j2we")
-public class J2weWebAppConfig extends WebMvcConfigurerAdapter {
+public class J2weApplicationContextConfig extends WebMvcConfigurerAdapter {
 
     @Bean
     public ViewResolver viewResolver() {

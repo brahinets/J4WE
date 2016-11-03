@@ -1,5 +1,5 @@
-import com.ysb.j2we.config.J2weWebAppConfig;
-import com.ysb.j2we.config.J2weWebAppInitializer;
+import com.ysb.j2we.config.J2weApplicationContextConfig;
+import com.ysb.j2we.config.J2weSpringWebAppInitializer;
 import com.ysb.j2we.model.service.IService;
 import com.ysb.j2we.model.service.impl.TestService;
 import org.junit.Assert;
@@ -12,7 +12,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration(classes = {J2weWebAppConfig.class, J2weWebAppInitializer.class})
+@ContextConfiguration(classes = {J2weApplicationContextConfig.class, J2weSpringWebAppInitializer.class})
 public class ServiceTest {
 
     @Autowired
