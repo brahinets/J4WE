@@ -18,6 +18,7 @@ dependencies {
     compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.3.Final'
     compile group: 'com.hynnet', name: 'oracle-driver-ojdbc6', version: '12.1.0.1'
     compile group: 'jstl', name: 'jstl', version: '1.2'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.7.5'
 
 }
 
