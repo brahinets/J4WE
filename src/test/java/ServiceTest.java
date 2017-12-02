@@ -18,13 +18,13 @@ public class ServiceTest {
     IService service;
 
     @Test
-    public void msgTest(){
+    public void msgTest() {
         String message1 = new TestService().getMessage();
         Assert.assertEquals(message1, "2 b || ! 2 b");
 
         String message2 = service.getMessage();
         Assert.assertEquals(message2, "2 b || ! 2 b");
-        
+
         Assert.assertEquals(message1, message2);
     }
 }

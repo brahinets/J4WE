@@ -29,7 +29,7 @@ public class PersonDAO implements IPersonDAO {
         CriteriaQuery<Person> criteria = factory.getCurrentSession().getCriteriaBuilder().createQuery(Person.class);
         Root<Person> root = criteria.from(Person.class);
         CriteriaQuery<Person> select = criteria.select(root);
-        
+
         return factory.getCurrentSession().createQuery(select).getResultList();
     }
 }

@@ -6,6 +6,6 @@ import java.util.Collection;
 
 public interface IPersonService {
     Person get(Long id);
-    
+
     Collection<Person> list();
 }

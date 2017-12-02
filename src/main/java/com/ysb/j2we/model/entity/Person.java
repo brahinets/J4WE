@@ -11,12 +11,13 @@ public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     private String name;
-    
+
     private Integer age;
 
-    public Person() {}
+    public Person() {
+    }
 
     public Person(long id, String name, int age) {
         this.id = id;
@@ -73,9 +74,9 @@ public class Person {
     @Override
     public String toString() {
         return "Person {" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age="+ + + + + + age +
-                '}';
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", age=" + + + + + +age +
+            '}';
     }
 }

@@ -11,6 +11,6 @@ function update(input) {
             document.getElementById("persons").innerHTML = "<span>" + response + "</span>";
         })
         .errorHandler(function (response) {
-            document.getElementById("persons").innerHTML = "<span>" + "Not found" + "</span>";
+            document.getElementById("persons").innerHTML = "<span>" + response + "</span>";
         }).send();
 }

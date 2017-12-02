@@ -6,6 +6,6 @@ import java.util.Collection;
 
 public interface IPersonDAO {
     Person get(Long id);
-    
+
     Collection<Person> list();
 }

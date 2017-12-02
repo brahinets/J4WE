@@ -9,8 +9,11 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
+
+import java.util.Properties;
 
 @Configuration
 @EnableWebMvc
@@ -36,10 +39,26 @@ public class J2weApplicationContextConfig extends WebMvcConfigurerAdapter {
     @Bean
     public PropertyPlaceholderConfigurer getPropertyPlaceholderConfigurer() {
         PropertyPlaceholderConfigurer ppc = new PropertyPlaceholderConfigurer();
-        
+
         ppc.setLocations(new ClassPathResource("application.properties"));
         ppc.setIgnoreUnresolvablePlaceholders(true);
-        
+
         return ppc;
+    }
+
+    @Bean
+    public SimpleMappingExceptionResolver simpleMappingExceptionResolver() {
+        SimpleMappingExceptionResolver s = new SimpleMappingExceptionResolver();
+
+        Properties p = new Properties();
+        p.setProperty("PersonNotFoundException", "error/error1");
+        p.setProperty("PersonNotFoundExceptionControllerSpecific", "error/error2");
+        p.setProperty("PersonNotFoundExceptionHttpStatusCodeSpecific", "error/error3");
+
+        s.setExceptionMappings(p);
+        s.setDefaultErrorView("error/default");
+        s.setExceptionAttribute("ex");
+
+        return s;
     }
 }

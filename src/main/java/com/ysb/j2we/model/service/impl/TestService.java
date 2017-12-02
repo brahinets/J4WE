@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class TestService implements IService {
-    public String getMessage(){
+    public String getMessage() {
         return "2 b || ! 2 b";
     }
 }

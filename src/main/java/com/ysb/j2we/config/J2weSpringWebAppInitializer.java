@@ -9,7 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
 public class J2weSpringWebAppInitializer implements WebApplicationInitializer {
-    
+
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         AnnotationConfigWebApplicationContext c = new AnnotationConfigWebApplicationContext();
